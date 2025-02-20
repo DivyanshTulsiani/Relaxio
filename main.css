@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body{
+  /* min-height: 100vh; */
+  /* background-image: linear-gradient(#0D0D0D,#1A1A1A);
+ 
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;*/
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(magicpattern-grid-pattern-1739913542562.png);
+      width: 100%;
+      height: 100%;
+      /* background-size: cover; */
+      background-position: center center;
+      background-repeat: repeat;
+      
+    font-family: Poppins,sans-serif;
+}
+
+.topbar{
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  border-radius: 150px;
+  position: fixed;
+  left: 50%;
+  top: 28px;
+  transform: translate(-50%);
+  width: 120vh;
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(20px);
+  border: 0.5px solid rgba(255, 241, 241, 0.244);
+  box-shadow: rgba(119, 119, 119, 0.859) 0px 0px 154px 0px;
+}
+.logo{
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+.buttons1{
+  margin-top: 12px;
+  margin-right: 20px;
+}
+.Musicbutton{
+  border-radius: 30px;
+  color: white;
+  background-color: rgba(27, 2, 27, 0.294);
+  border: 0.5px solid rgba(255, 241, 241, 0.244);
+  box-shadow: rgba(119, 119, 119, 0.792) 0px 0px 154px 0px;
+  font-size: 15px;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.Twitterbutton{
+  border-radius: 30px;
+  color: white;
+  background-color: rgba(31, 3, 123, 0.999);
+  border: 0.5px solid rgba(255, 241, 241, 0.244);
+  box-shadow: rgba(119, 119, 119, 0.055) 0px 0px 154px 0px;
+  font-size: 15px;
+  padding: 7px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.mainmenu2{
+  
+}
+.circle{
+  z-index: -1;
+}
+.searchcity{
+  margin: 0 auto;
+  background: linear-gradient(195deg,rgba(253,184,255,0.1),rgba(255,255,255,0));
+  /* background-image: image-set(url(https://playota.app/_next/static/media/circleThing.144242df.svg)); */
+  border-radius: 60px;
+  width: 470px;
+  height: 400px;
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  /* box-shadow: rgba(31, 81, 255, 0.859) 0px 0px 154px 40px; */
+  /* box-shadow: 0 0 12px 4px #0036f800; */
+  position: relative;
+}
+/* .searchcity::after,.searchcity::before{
+  content: '';
+  position: absolute;
+  background-image: conic-gradient( #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 20px;
+} */
+.emoji-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.emoji{
+  position: absolute;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.inputbox{
+  padding-top: 6%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.textabove{
+  padding-top: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* display: flex; */
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  /* font-family: Oswald,sans-serif; */
+  font-family: Poppins,sans-serif;
+  color: rgb(182, 192, 219);
+  /* color: #2971ff; */
+  background-image: linear-gradient(blue purple);
+}
+.imgtext{
+  height: 40px;
+  width: 40px;
+}
+.input1{
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-content: center;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #7171f4;
+  border: none;
+  background-color: rgb(32 32 55);
+  box-shadow: rgba(31, 31, 105, 0.7) 0px 0px 154px 0px;
+
+  color: white;
+}
+
+.Startbutton{
+  margin-top: 1rem;
+  border-radius: 10px;
+  color: white;
+  /* background-color: rgba(57, 33, 123, 0.999); */
+  background-color: #0047d6;
+
+  border: 0.5px solid rgba(255, 241, 241, 0.244);
+  /* box-shadow: rgba(119, 119, 119, 0.355) 0px 0px 154px 10px; */
+  box-shadow: 0 0 12px 4px #00000000;
+  font-size: 25px;
+  /* font-weight: bold; */
+  width: 200px;
+  height: 40px;
+}
+.Startbutton:hover{
+  background-color: #002f8c;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px)
+{
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .topbar{
+    width: 100%;
+  }
+  .searchcity{
+    /* width: 70%; */
+    width: 400px;
+  }
+}
