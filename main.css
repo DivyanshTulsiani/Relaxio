@@ -189,6 +189,18 @@ body{
 }
 
 
+.Weatherdisplay{
+  margin: 0 auto;
+  display: flex;
+  color: white;
+  height: 35rem;
+  width: 650px;
+  background-image: linear-gradient(#1C1C1E,#2C2C2E);
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  border-radius: 2rem;
+}
+
 @media only screen and (max-width: 900px)
 {
   body{
@@ -202,5 +214,8 @@ body{
   .searchcity{
     /* width: 70%; */
     width: 400px;
+  }
+  .Weatherdisplay{
+    width: 75%;
   }
 }
