@@ -64,12 +64,19 @@ function weatherTOEmoji(weather){
 async function fetchdata(cityname) {
   try{
     const respone = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${weatherKey}&units=metric`)
-    
+    const response2 = await fetch('https://api.quotable.io/quotes/random?minLength=100&maxLength=140')
     if(!respone.ok){
       alert("Incorrect city name")
       throw new Error("Incorrect City Name")    
     }
+    if(!response2.ok){
+      alert("Some Error Occured")
+      throw new Error("Some Error Ocuured")    
+    }
     const incomdata = await respone.json()
+    const incomdata2 = await response2.json()
+    let authorname = await incomdata2[0].author
+    let quote = await incomdata2[0].content
     console.log("success");
     let tem = await incomdata.main.temp;
     let temfeel = await incomdata.main.feels_like;
@@ -83,10 +90,10 @@ async function fetchdata(cityname) {
     console.log(emoji)
     let visible = incomdata.visibility
     console.log(tem)
-    let statevar = [tem,temfeel,name,conditions,emoji,mood]
+    let statevar = [tem,temfeel,name,conditions,emoji,mood,authorname,quote]
     // document.getElementById("weatherdis").style.display = "flex";
 
-    await setelements(statevar);
+    await render(statevar);
   }
   catch(e){
     alert("Enter a valid city name!!!! or Check your Internet Connection");
@@ -94,18 +101,20 @@ async function fetchdata(cityname) {
   }
 }
 
-async function setelements(state){
+async function render(state){
   let imgemoji = document.getElementById("imgemoji");
   let tempdeg = document.getElementById("temp");
   let feelslike = document.getElementById("feelslike");
   let cityname = document.getElementById("cityname");
   let Mood = document.getElementById("Mood");
-
-
+  let Quote = document.getElementById("Quote")
+  let authorname = document.getElementById("authorname")
   imgemoji.setAttribute("src",`${state[4]}`)
   tempdeg.textContent = `${Math.floor(state[0])}°C`
   feelslike.textContent = `Feels Like ${Math.floor(state[1])}`
   // cityname.textContent = `${state[2]}`
   cityname.innerHTML = `<span class="Behindbhopal">in</span> ${state[2]}`;
   Mood.textContent = `${state[5]}`
+  Quote.textContent = `${state[7]}`
+  authorname.textContent = `by ${state[6]}`
 }
