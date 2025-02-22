@@ -64,7 +64,7 @@ function weatherTOEmoji(weather){
 async function fetchdata(cityname) {
   try{
     const respone = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${weatherKey}&units=metric`)
-    const response2 = await fetch('https://api.quotable.io/quotes/random?minLength=100&maxLength=140')
+    const response2 = await fetch('https://thequoteshub.com/api/')
     if(!respone.ok){
       alert("Incorrect city name")
       throw new Error("Incorrect City Name")    
@@ -75,8 +75,8 @@ async function fetchdata(cityname) {
     }
     const incomdata = await respone.json()
     const incomdata2 = await response2.json()
-    let authorname = await incomdata2[0].author
-    let quote = await incomdata2[0].content
+    let authorname = await incomdata2.author
+    let quote = await incomdata2.text
     console.log("success");
     let tem = await incomdata.main.temp;
     let temfeel = await incomdata.main.feels_like;
