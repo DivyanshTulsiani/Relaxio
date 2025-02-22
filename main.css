@@ -304,7 +304,35 @@ body{
   justify-content: center;
   font-weight: 100;
 }
+.Quoteouter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.quoteheading{
+  /* color: rgb(135, 64, 241); */
+  color: rgb(246 189 118);
+  font-weight: 900;
+  font-size: 2.3rem;
+}
 
+.quotecontent{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.quoteauthor{
+  margin-top: 1rem;
+  display: flex;
+  margin-left: 15rem;
+  color: rgba(206, 199, 199, 0.705);
+  font-weight: 100;
+  font-size: 0.7rem;
+}
 /* .conditions{
   height: 12rem;
   width: 10rem; */
