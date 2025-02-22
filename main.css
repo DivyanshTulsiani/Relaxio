@@ -201,7 +201,7 @@ body{
 
 .Weatherdisplay{
   margin: 0 auto;
-  display: flex;
+  display: none;
   flex-direction: column;
   /* align-items: center; */
   color: white;
