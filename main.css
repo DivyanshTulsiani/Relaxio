@@ -302,6 +302,7 @@ body{
 .Mood{
   display: flex;
   justify-content: center;
+  text-align: center;
   font-weight: 100;
 }
 .Quoteouter{

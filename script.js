@@ -12,6 +12,29 @@ function startbutton(){
   let disp = document.getElementById("Weatherdisplay");
   disp.style.display = "flex";
 }
+
+
+function weatherToMood(weather) {
+  const weatherDescription = {
+      "clear": "The sun's out, sunglasses on! Perfect day to shine like the weather. 😎☀️",
+      "clouds": "Fluffy clouds drifting by... maybe they’re gossiping about us? ☁️🤔",
+      "rain": "Raindrops are nature's way of saying 'Stay in and sip some hot cocoa.' ☔🍵",
+      "thunderstorm": "Boom! Crack! Mother Nature’s hosting a rock concert. 🎸⚡",
+      "snow": "Winter magic in the air! Time to build a snowman or have an epic snowball fight. ❄️⛄",
+      "mist": "A dreamy mist, like you’ve stepped into a mysterious fantasy novel. 📖🌫️",
+      "fog": "Fog so thick, even ghosts might get lost. Drive safe! 👻🌁",
+      "haze": "The world looks like an Instagram filter today. #NoFilterNeeded 🌆",
+      "smoke": "The air’s got that smoky vibe—like a BBQ party but without the food. 🍗🚫",
+      "dust": "Dusty winds blowing! Feels like you’ve been transported to an old Western movie. 🤠🌵",
+      "sand": "Sandstorm incoming! Time to cover up and pretend you’re in a desert adventure. 🏜️🥷",
+      "ash": "Volcanic ash? Yikes! Feels like a post-apocalyptic movie scene. Stay indoors! 🌋🚷",
+      "squall": "Hold onto your hats! The wind’s trying to steal them. 🎩💨",
+      "tornado": "Twister alert! Channel your inner storm chaser or, better yet, seek shelter! 🌪️🏃‍♂️",
+  };
+
+  return weatherDescription[weather] || "The weather's doing its thing—time to enjoy some good tunes! 🎶😊";
+}
+
 function weatherTOEmoji(weather){
   const weatherEmojiMap= {
       "clear": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Sun%20with%20Face.png",
@@ -41,6 +64,7 @@ function weatherTOEmoji(weather){
 async function fetchdata(cityname) {
   try{
     const respone = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${weatherKey}&units=metric`)
+    
     if(!respone.ok){
       alert("Incorrect city name")
       throw new Error("Incorrect City Name")    
@@ -55,10 +79,11 @@ async function fetchdata(cityname) {
     console.log(emojitype);
     let emojitype2 = emojitype.toLowerCase()
     let emoji = weatherTOEmoji(emojitype2)
+    let mood = weatherToMood(emojitype2)
     console.log(emoji)
     let visible = incomdata.visibility
     console.log(tem)
-    let statevar = [tem,temfeel,name,conditions,emoji]
+    let statevar = [tem,temfeel,name,conditions,emoji,mood]
     // document.getElementById("weatherdis").style.display = "flex";
 
     await setelements(statevar);
@@ -74,9 +99,13 @@ async function setelements(state){
   let tempdeg = document.getElementById("temp");
   let feelslike = document.getElementById("feelslike");
   let cityname = document.getElementById("cityname");
+  let Mood = document.getElementById("Mood");
+
+
   imgemoji.setAttribute("src",`${state[4]}`)
   tempdeg.textContent = `${Math.floor(state[0])}°C`
   feelslike.textContent = `Feels Like ${Math.floor(state[1])}`
   // cityname.textContent = `${state[2]}`
   cityname.innerHTML = `<span class="Behindbhopal">in</span> ${state[2]}`;
+  Mood.textContent = `${state[5]}`
 }
