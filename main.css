@@ -11,8 +11,8 @@ body{
     /* background-size: cover; */
     background-position: center center;
      background-repeat: repeat;
-    background-image: url(magicpattern-grid-pattern-1739392600911.png);
-    /* background-image: url(magicpattern-grid-pattern-1740239199698.png); */
+    /* background-image: url(magicpattern-grid-pattern-1739392600911.png); */
+    background-image: url(magicpattern-grid-pattern-1740587196989.png);
     /* font-family: Poppins,sans-serif; */
     font-family: "HelveticaNeue Medium", "HelveticaNeue-Medium", "Helvetica Neue Medium", sans-serif;
 
@@ -87,7 +87,7 @@ body{
 .searchcity{
   margin: 0 auto;
   /* background: linear-gradient(330deg,rgba(0,0,0,0.1),rgba(255,255,255,0)); */
-  background: #14001a;
+  background: #000000;
   /* background-image: image-set(url(https://playota.app/_next/static/media/circleThing.144242df.svg)); */
   border-radius: 27px;
   width: 334px;
@@ -99,7 +99,7 @@ body{
   /* justify-content: space-between; */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
   /* box-shadow: rgba(31, 81, 255, 0.859) 0px 0px 154px 40px; */
   /* box-shadow: 0 0 12px 4px #0036f800; */
 
@@ -157,7 +157,7 @@ body{
   /* font-family: Oswald,sans-serif; */
   /* font-family: Poppins,sans-serif; */
   font-family: "HelveticaNeue Medium", "HelveticaNeue-Medium", "Helvetica Neue Medium", sans-serif;
-  color: rgb(182, 192, 219);
+  color: rgb(255, 255, 255);
   /* color: #2971ff; */
   background-image: linear-gradient(blue purple);
   display: flex;
@@ -167,7 +167,7 @@ body{
 .imgtext{
   height: auto;
   width: 7rem;
-}
+} 
 .input1{
   margin-top: 0px;
   display: flex;
