@@ -272,3 +272,25 @@ body{
 .btn:hover .icon {
   transform: translateX(2px);
 }
+
+.endinglogo{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.btn1{
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  color: #d1d5db; /* Neutral-300 */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  background: linear-gradient(black, #9333ea) padding-box, 
+              linear-gradient(#9333ea, #c084fc 75%, transparent 100%) border-box;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: color 0.15s ease-in-out;
+  border: 2px solid transparent;
+}
