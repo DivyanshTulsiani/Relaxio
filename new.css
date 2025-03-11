@@ -313,7 +313,7 @@ body{
   border-radius: 50%;
 }
 
-/* .endingtext{
+.endingtext{
   color: white;
   text-align: center;
       /* background-image: linear-gradient(0deg, rgb(182, 192, 219) 0%, rgb(255, 255, 255) 100%); */
@@ -333,4 +333,4 @@ body{
      font-family: "HelveticaNeue Medium", "HelveticaNeue-Medium", "Helvetica Neue Medium", sans-serif;
      padding-left: 16rem;
      padding-right: 16rem;
-    } */
+    }
