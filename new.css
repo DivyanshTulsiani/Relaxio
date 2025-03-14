@@ -41,6 +41,9 @@ body{
   font-size: 1.5rem;
   margin-top: 0.2rem;
   padding-left: 20px;
+  background: repeating-radial-gradient(circle farthest-side at center center, #FFFFFF 0%, #C4C4C4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .buttons1{
   margin-top: 0.4rem;
@@ -333,4 +336,44 @@ body{
      font-family: "HelveticaNeue Medium", "HelveticaNeue-Medium", "Helvetica Neue Medium", sans-serif;
      padding-left: 16rem;
      padding-right: 16rem;
+    }
+
+
+    footer{
+      margin-top: 4rem;
+      width: 100%;
+      padding: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-top: 1px;
+      border-bottom: 0;
+      border-left: 0;
+      border-right: 0;
+      border-style: solid;
+      border-color: rgba(255, 241, 241, 0.11);
+      gap: 2rem;
+      /* box-shadow: rgba(143, 153, 165, 0.2) 0px 8px 24px; */
+      /* box-shadow: rgba(119, 119, 119, 0.6) 0px 0px 154px 0px; */
+      font-size: .875rem;
+      color: rgb(100, 100, 142);
+      background: linear-gradient(rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.06)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+    }
+    .footerlogoimg{
+      align-items: center;
+      width: 2rem;
+      height: auto;
+    }
+
+    .logowrite{
+      align-items: center;
+      text-align: center;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      font-size: 2rem;
+      background: repeating-radial-gradient(circle farthest-side at center center, #FFFFFF 0%, #C4C4C4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
     }
