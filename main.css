@@ -30,30 +30,31 @@ body{
   margin: 0 auto;
   background: rgb(0, 0, 0,0.1);
   border-radius: 150px;
-  position: fixed;
-  left: 50%;
-  top: 28px;
-  transform: translate(-50%);
-  width: 120vh;
-  height: 60px;
-  z-index: 3;
+  width: 100vh;
+  height: 40px;
+  margin-top: -12rem;
   display: flex;
   justify-content: space-between;
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(20px);
   border: 0.5px solid rgba(255, 241, 241, 0.244);
   box-shadow: rgba(119, 119, 119, 0.859) 0px 0px 154px 0px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
 }
 .logo{
   font-weight: bold;
   color: rgb(255, 255, 255);
-  font-size: 32px;
-  margin-top: 5px;
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
   padding-left: 20px;
-  font-family: Poppins,sans-serif;
+  background: repeating-radial-gradient(circle farthest-side at center center, #FFFFFF 0%, #C4C4C4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .buttons1{
-  margin-top: 12px;
+  margin-top: 0.4rem;
   margin-right: 20px;
 }
 .Musicbutton{
@@ -62,10 +63,15 @@ body{
   background-color: rgba(27, 2, 27, 0.294);
   border: 0.5px solid rgba(255, 241, 241, 0.244);
   box-shadow: rgba(119, 119, 119, 0.792) 0px 0px 154px 0px;
-  font-size: 15px;
+  font-size: 0.7rem;
   padding: 7px;
   padding-left: 15px;
   padding-right: 15px;
+}
+.Musicbutton:hover{
+  cursor: pointer;
+  background-color: #291414;
+
 }
 .Twitterbutton{
   border-radius: 30px;
@@ -73,10 +79,14 @@ body{
   background-color: rgba(31, 3, 123, 0.999);
   border: 0.5px solid rgba(255, 241, 241, 0.244);
   box-shadow: rgba(119, 119, 119, 0.055) 0px 0px 154px 0px;
-  font-size: 15px;
+  font-size: 0.7rem;
   padding: 7px;
   padding-left: 18px;
   padding-right: 18px;
+}
+.Twitterbutton:hover{
+  cursor: pointer;
+  background-color: rgba(21, 2, 84, 0.999);;
 }
 .mainmenu2{
   
@@ -369,28 +379,10 @@ body{
   box-shadow: 0 0 12px 4px #00a6ffb8;
 } */
 
-@media only screen and (max-width: 900px)
-{
-  body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .topbar{
-    width: 100%;
-  }
-  .searchcity{
-    /* width: 70%; */
-    width: 20rem;
-  }
-  /* .Weatherdisplay{
-    width: 75%;
-  } */
-}
 
 
 footer{
-  margin-top: 4rem;
+  margin-top: 28rem;
   width: 100%;
   padding: -0.5rem;
   display: flex;

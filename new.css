@@ -21,7 +21,7 @@ body{
 
 .topbar{
   margin: 0 auto;
-  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0,0.1);
   border-radius: 150px;
   width: 100vh;
   height: 40px;
@@ -33,7 +33,8 @@ body{
   border: 0.5px solid rgba(255, 241, 241, 0.244);
   box-shadow: rgba(119, 119, 119, 0.859) 0px 0px 154px 0px;
   position: fixed;
-  left: 23%;
+  left: 50%;
+  transform: translate(-50%);
 }
 .logo{
   font-weight: bold;
@@ -60,6 +61,11 @@ body{
   padding-left: 15px;
   padding-right: 15px;
 }
+.Musicbutton:hover{
+  cursor: pointer;
+  background-color: #291414;
+
+}
 .Twitterbutton{
   border-radius: 30px;
   color: white;
@@ -70,6 +76,10 @@ body{
   padding: 7px;
   padding-left: 18px;
   padding-right: 18px;
+}
+.Twitterbutton:hover{
+  cursor: pointer;
+  background-color: rgba(21, 2, 84, 0.999);;
 }
 
 .herosection{
@@ -425,3 +435,106 @@ body{
   .outerfooter1{
     display: flex;
   }
+
+
+@media only screen and (max-width: 860px)
+{
+    /* .herosection{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    } */
+    .topbar{
+      width: 650px;
+    }
+    .endingtext2{
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+    footer{
+      font-size: 0.75rem;
+    }
+    .footerlogoimg{
+      width: 1.5rem;
+    }
+    .logowrite{
+      margin-top: 0.2rem;
+      font-size: 1.5rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 731px)
+{
+  .topbar{
+    width: 450px;
+  }
+    .herosection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+  }
+  footer{
+    font-size: 0.55rem;
+  }
+  .herocontainer1{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .herocontainer2{
+    margin-bottom: 1rem;
+  }
+  .herocontainer3{
+    align-items: center;
+    margin-top: 0rem;
+    margin-right: 1rem;
+  }
+  
+}
+
+@media only screen and (max-width: 600px){
+  .footerlogoimg{
+    width: 0rem;
+  }
+  .logowrite{
+    font-size: 0rem;
+  }
+  footer{
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 486px){
+  footer{
+    font-size: 0.45rem;
+  }
+  .btn1{
+    font-size: 14px;
+  }
+  .topbar{
+    width: 380px;
+  }
+  .outline-container{
+    width: 354px;
+  }
+}
+
+@media only screen and (max-width: 424px){
+  footer{
+    font-size: 0.40rem;
+  }
+
+}
+
+@media only screen and (max-width: 391px){
+  footer{
+    font-size: 0.30rem;
+  }
+  .btn1{
+    font-size: 11px;
+  }
+
+}
