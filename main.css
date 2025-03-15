@@ -387,3 +387,91 @@ body{
     width: 75%;
   } */
 }
+
+
+footer{
+  margin-top: 4rem;
+  width: 100%;
+  padding: -0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: rgba(255, 241, 241, 0.11);
+  gap: 2rem;
+  /* box-shadow: rgba(143, 153, 165, 0.2) 0px 8px 24px; */
+  /* box-shadow: rgba(119, 119, 119, 0.6) 0px 0px 154px 0px; */
+  font-size: .875rem;
+  color: rgb(100, 100, 142);
+  background: linear-gradient(rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  background-image: url("abstract-dark-background-with-flowing-colouful-waves.jpg");
+}
+.footerlogoimg{
+  margin-top: 0.5rem;
+  align-items: center;
+  text-align: center;
+  width: 2rem;
+  height: auto;
+}
+.outerlogowrite{
+  align-items: center;
+  text-align: center;
+}
+.logowrite{
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  background: repeating-radial-gradient(circle farthest-side at center center, #FFFFFF 0%, #C4C4C4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.footer-description{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.CodeMagico{
+  /* font-family: "HelveticaNeue Medium","HelveticaNeue-Medium", "Helvetica Neue Medium", sans-serif; */
+  background: linear-gradient(to right, #fff, #0081ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+.footer-social{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.footer-social:hover{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.creator{
+font-weight: 400;
+  color: white;
+}
+.github{
+  text-decoration: none;
+  color: rgb(248, 248, 248);
+  font-weight: 600;
+}
+.github:hover{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.outerfooter1{
+display: flex;
+}
