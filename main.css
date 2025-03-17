@@ -12,7 +12,7 @@ body{
     background-position: center center;
      background-repeat: repeat;
     /* background-image: url(magicpattern-grid-pattern-1739392600911.png); */
-    background-image: url(magicpattern-grid-pattern-1740587196989.png);
+    background-image: url(Images/magicpattern-grid-pattern-1740587196989.png);
     /* font-family: Poppins,sans-serif; */
     font-family: "HelveticaNeue Medium", "HelveticaNeue-Medium", "Helvetica Neue Medium", sans-serif;
 
@@ -400,7 +400,7 @@ footer{
   font-size: .875rem;
   color: rgb(100, 100, 142);
   background: linear-gradient(rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
-  background-image: url("abstract-dark-background-with-flowing-colouful-waves.jpg");
+  background-image: url("Images/abstract-dark-background-with-flowing-colouful-waves.jpg");
 }
 .footerlogoimg{
   margin-top: 0.5rem;
